@@ -1,12 +1,16 @@
 from turtle import position, title
 from django.db import models
 
+# dddf
 # Create your models here.
 class Position(models.Model):
     title = models.CharField(max_length=50)
 
     def __str__(self):
         return self.title
+
+
+# dfdfds
 
 
 class Employee(models.Model):

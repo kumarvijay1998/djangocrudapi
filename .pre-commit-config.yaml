@@ -3,25 +3,7 @@ repos:
     rev: 22.1.0
     hooks:
       - id: black
-        exclude: '''
-
-(
-  /(
-      \.eggs         # exclude a few common directories in the
-    | \.git          # root of the project
-    | \.hg
-    | \.mypy_cache
-    | \.tox
-    | \.venv
-    | _build
-    | buck-out
-    | build
-    | dist
-  )/
-  | sample.py           # also separately exclude a file named foo.py in
-                     # the root of the project
-)
-'''
+        exclude: "sampl.py"
         # It is recommended to specify the latest version of Python
         # supported by your project here, or alternatively use
         # pre-commit's default_language_version, see
